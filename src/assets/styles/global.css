@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "leaflet/dist/leaflet.css";
+
+@plugin "@tailwindcss/typography";
+
+:root {
+  --radius: 0.25rem;
+  --accent: #f47521;
+  --border: var(--color-gray-100);
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+  }
+}

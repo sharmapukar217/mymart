@@ -1,0 +1,21 @@
+pre-commit:
+  parallel: true
+  commands:
+    type-check:
+      glob: "*.{tsx,ts}"
+      run: pnpm tsc --noEmit --incremental
+
+    format:
+      stage_fixed: true
+      glob: "*.{tsx,ts,js,jsx,json,css}"
+      run: pnpm biome format --write {staged_files}
+
+    lint:
+      stage_fixed: true
+      glob: "*.{tsx,ts,js,jsx}"
+      run: pnpm biome lint --fix {staged_files}
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint --edit {1}

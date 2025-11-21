@@ -1,0 +1,5 @@
+procs:
+  nextjs:
+    cmd: ["pnpm", "dev"]
+  codegen:
+    cmd: ["pnpm", "graphql-codegen", "--watch"]
