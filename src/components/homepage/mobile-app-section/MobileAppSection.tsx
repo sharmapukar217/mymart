@@ -7,18 +7,18 @@ export function MobileAppSection() {
       <div className="container grid gap-16 lg:grid-cols-2">
         <div className="space-y-6 my-auto">
           <div className="flex items-center text-center lg:text-start lg:items-start flex-col gap-y-8">
-            <div className="bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
+            <div className="text-sm md:text-base bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
               Mobile App
             </div>
             <div className="space-y-2 max-w-xl">
-              <h1 className="font-bold text-4xl">
+              <h1 className="font-bold text-2xl md:text-4xl">
                 <span>Download Our</span>
                 <br />
                 <span className="bg-gradient-to-b from-accent to-accent/60 text-transparent bg-clip-text">
                   Mobile app
                 </span>
               </h1>
-              <p className="font-medium text-lg text-pretty text-foreground/85">
+              <p className="font-medium text-base md:text-lg text-pretty text-foreground/85">
                 Fresh groceries, daily essentials, and more delivered to your
                 doorstep in just minutes. Shop from Rice, Oil, Snacks, Fruits,
                 Drinks, Veggies and much more!

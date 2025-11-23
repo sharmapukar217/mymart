@@ -8,7 +8,7 @@ const config: IGraphQLConfig = {
   documents: "src/operations/**/*.gql",
   schema: [
     {
-      [process.env.GRAPHQL_API_URL!]: {
+      [process.env.GRAPHQL_API_URL as string]: {
         headers: {
           Accept: "application/json"
         }

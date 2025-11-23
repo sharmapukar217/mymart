@@ -3,15 +3,19 @@ import Image from "next/image";
 
 export function KeyFeaturesSection() {
   return (
-    <section className="py-20 bg-radial to-surface from-accent/10">
+    <section
+      id="features"
+      className="py-20 bg-radial to-surface scroll-my-20 from-accent/10">
       <div className="container space-y-12">
         <div className="flex flex-col items-center justify-center text-center gap-y-8">
-          <div className="bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
+          <div className="text-sm md:text-base bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
             Key Features
           </div>
           <div className="space-y-2 max-w-xl">
-            <h1 className="font-bold text-4xl">Smart Shopping Made Simple</h1>
-            <p className="font-medium text-lg text-pretty text-foreground/85">
+            <h1 className="font-bold text-2xl md:text-4xl">
+              Smart Shopping Made Simple
+            </h1>
+            <p className="font-medium text-base md:text-lg text-pretty text-foreground/85">
               Discover the benefits that make your shopping faster, easier and
               secure
             </p>
@@ -21,8 +25,10 @@ export function KeyFeaturesSection() {
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="flex flex-col-reverse lg:flex-col lg:even:flex-col-reverse gap-8 items-center justify-center">
             <div className="text-center">
-              <h3 className="font-semibold text-2xl">Customer Support</h3>
-              <p className="text-foreground/85">
+              <h3 className="font-semibold text-lg md:text-2xl">
+                Customer Support
+              </h3>
+              <p className="text-foreground/85 text-sm md:text-base">
                 Strategically located micro-warehouses ensure fastest delivery
                 times
               </p>
@@ -50,8 +56,10 @@ export function KeyFeaturesSection() {
 
           <div className="flex flex-col-reverse lg:flex-col lg:even:flex-col-reverse gap-8 items-center justify-center">
             <div className="text-center">
-              <h3 className="font-semibold text-2xl">Fresh Groceries</h3>
-              <p className="text-foreground/85">
+              <h3 className="font-semibold text-lg md:text-2xl">
+                Fresh Groceries
+              </h3>
+              <p className="text-foreground/85 text-sm md:text-base">
                 Multiple payment options with bank-level security for peace of
                 mind
               </p>
@@ -79,8 +87,10 @@ export function KeyFeaturesSection() {
 
           <div className="flex flex-col-reverse lg:flex-col lg:even:flex-col-reverse gap-8 items-center justify-center">
             <div className="text-center">
-              <h3 className="font-semibold text-2xl">100% Secure Payment</h3>
-              <p className="text-foreground/85">
+              <h3 className="font-semibold text-lg md:text-2xl">
+                100% Secure Payment
+              </h3>
+              <p className="text-foreground/85 text-sm md:text-base">
                 Get your groceries delivered in just 15-20 minutes with our
                 quick commerce model
               </p>

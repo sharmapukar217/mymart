@@ -1,48 +1,59 @@
+import Image from "next/image";
 import { Button, Card } from "@heroui/react";
 import { SmartphoneIcon } from "lucide-react";
 import QRCode from "react-qr-code";
 
+import heroImage from "@/assets/images/hero.png";
+
 export function HeroSection() {
   return (
-    <section className="bg-radial from-accent/10 from-40% to-accent/5">
-      <div className="container py-32">
+    <section className="bg-radial from-accent/10 scroll-my-20 from-40% to-accent/5 overflow-clip">
+      <div className="relative container py-10 grid gap-x-20 lg:grid-cols-2">
         <div className="space-y-8">
           <div className="mb-4">
-            <strong className="font-semibold text-lg bg-gradient-to-b from-accent to-accent/60 text-transparent bg-clip-text">
+            <strong className="font-semibold text-sm md:text-lg bg-gradient-to-b from-accent to-accent/60 text-transparent bg-clip-text">
               Nepal's Fastest Grocery Delivery
             </strong>
           </div>
           <div className="grid gap-2">
-            <div className="font-bold text-6xl tracking-tight">
+            <div className="font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight">
               <h1>Order Grocery and More...</h1>
               <h2 className="bg-gradient-to-b from-accent/60 to-accent text-transparent bg-clip-text">
                 in Minutes
               </h2>
             </div>
-            <p className="text-lg max-w-xl text-pretty">
+            <p className="text-sm md:text-lg max-w-xl text-pretty">
               Fresh groceries, daily essentials, and more delivered to your
               doorstep in just minutes. Shop from Rice, Oil, Snacks, Fruits,
               Drinks, Veggies and much more!
             </p>
           </div>
 
-          <Card className="w-full max-w-lg flex flex-row border">
-            <Card.Header className="flex justify-center gap-2">
-              <Card.Title className="font-bold text-2xl">
-                <span>Scan QR Code &amp;</span>
-                <br />
-                <span className="bg-gradient-to-b from-accent/60 to-accent text-transparent bg-clip-text">
-                  Download the App
-                </span>
-              </Card.Title>
-              <Card.Description className="text-lg text-pretty">
-                My Mart is available on the App Store. Get started with My Mart
-                in Seconds!
-              </Card.Description>
-            </Card.Header>
+          <Card className="w-full max-w-lg flex flex-col sm:flex-col border gap-y-6 md:gap-y-0">
+            <h1 className="w-fit font-bold text-xl sm:text-2xl">
+              <span>Scan QR Code &amp;</span>
+              <br />
+              <span className="bg-gradient-to-b from-accent/60 to-accent text-transparent bg-clip-text">
+                Download the App
+              </span>
+            </h1>
 
-            <Card.Content className="shrink-0 space-y-2">
-              <div className="size-36 p-2 group relative">
+            <div className="flex flex-col-reverse sm:flex-row items-center sm:items-end gap-8">
+              <div className="grid gap-4 mb-1">
+                <Card.Description className="text-sm md:text-lg text-pretty">
+                  My Mart is available on the App Store. Get started with My
+                  Mart in Seconds!
+                </Card.Description>
+
+                <Button
+                  variant="secondary"
+                  className="w-full ring-1 bg-accent/5 hover:bg-accent hover:text-accent-foreground transition-colors duration-500">
+                  Download App
+                  <SmartphoneIcon />
+                </Button>
+              </div>
+
+              <div className="shrink-0 size-36 p-2 group relative">
                 <svg
                   fill="none"
                   viewBox="0 0 96 96"
@@ -58,14 +69,17 @@ export function HeroSection() {
                   className="rounded-2xl text-accent size-full"
                 />
               </div>
-              <Button
-                variant="secondary"
-                className="w-full ring-1 bg-accent/5 hover:bg-accent hover:text-accent-foreground transition-colors duration-500">
-                Download App
-                <SmartphoneIcon />
-              </Button>
-            </Card.Content>
+            </div>
           </Card>
+        </div>
+
+        <div className="lg:absolute -right-[40%] bottom-0">
+          <Image
+            alt=""
+            src={heroImage.src}
+            width={heroImage.width}
+            height={heroImage.height}
+          />
         </div>
       </div>
     </section>

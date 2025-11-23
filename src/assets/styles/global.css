@@ -2,7 +2,14 @@
 @import "@heroui/styles";
 @import "leaflet/dist/leaflet.css";
 
+@import "aos/dist/aos.css";
+@import "lenis/dist/lenis.css";
+
+@plugin "tailwind-hamburgers";
 @plugin "@tailwindcss/typography";
+
+@custom-variant hover (&:hover);
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --radius: 0.25rem;
@@ -10,8 +17,18 @@
   --border: var(--color-gray-100);
 }
 
+.dark {
+  --border: var(--color-gray-700);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
 @layer utilities {
   .container {
-    @apply w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+    @apply w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8;
   }
 }

@@ -38,15 +38,17 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section className="py-20 bg-surface-secondary">
+    <section id="faqs" className="py-20 scroll-my-20 bg-surface-secondary">
       <div className="container space-y-12">
         <div className="flex flex-col items-center justify-center text-center gap-y-8">
-          <div className="bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
+          <div className="text-sm md:text-base bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
             FAQs
           </div>
           <div className="space-y-2 max-w-xl">
-            <h1 className="font-bold text-4xl">Frequently Asked Questions</h1>
-            <p className="font-medium text-lg text-pretty text-foreground/85">
+            <h1 className="font-bold text-2xl md:text-4xl">
+              Frequently Asked Questions
+            </h1>
+            <p className="font-medium text-base md:text-lg text-pretty text-foreground/85">
               Can&apos;t find the answer here? Check out our Help Center.
             </p>
           </div>
@@ -62,7 +64,7 @@ export function FAQSection() {
                 id={`${idx}`}
                 className="bg-surface rounded-3xl border shadow-sm divide-y-0">
                 <Accordion.Heading>
-                  <Accordion.Trigger className="text-lg rounded-3xl hover:bg-surface data-[hovered]:bg-surface data-[hovered]:text-accent aria-[expanded=true]:text-accent hover:text-accent">
+                  <Accordion.Trigger className="text-base md:text-lg rounded-3xl hover:bg-surface data-[hovered]:bg-surface data-[hovered]:text-accent aria-[expanded=true]:text-accent hover:text-accent">
                     {faq.question}
                     <Accordion.Indicator className="data-[expanded]:rotate-45">
                       <PlusIcon />
@@ -71,7 +73,7 @@ export function FAQSection() {
                 </Accordion.Heading>
 
                 <Accordion.Panel>
-                  <Accordion.Body className="text-base">
+                  <Accordion.Body className="text-sm md:text-base">
                     {faq.answer}
                   </Accordion.Body>
                 </Accordion.Panel>

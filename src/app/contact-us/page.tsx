@@ -1,5 +1,6 @@
 import contactUsImage from "@/assets/images/contact-us.png";
 import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
+import { Header } from "@/components/layouts/Header";
 import { Footer } from "@/components/layouts/Footer";
 import { MailIcon } from "lucide-react";
 import Image from "next/image";
@@ -8,8 +9,9 @@ import { ContactUsForm } from "./ContactUsForm";
 
 export default function ContactUsPage() {
   return (
-    <div>
-      <main className="py-20 bg-surface-secondary">
+    <>
+      <Header />
+      <main id="contact-us" className="py-20 scroll-my-20 bg-surface-secondary">
         <div className="container grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <div className="bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
@@ -44,6 +46,6 @@ export default function ContactUsPage() {
       </main>
       <AvailableCities />
       <Footer />
-    </div>
+    </>
   );
 }

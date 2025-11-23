@@ -1,11 +1,13 @@
 import { Button, Card, Checkbox, Input, Label } from "@heroui/react";
 import { TriangleAlertIcon } from "lucide-react";
 import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
+import { Header } from "@/components/layouts/Header";
 import { Footer } from "@/components/layouts/Footer";
 
 export default function DeleteAccountPage() {
   return (
-    <div>
+    <>
+      <Header />
       <main className="py-20 bg-gradient-to-br from-surface-secondary to-accent/10">
         <Card className="max-w-md mx-auto border bg-surface/90 backdrop-blur-2xl">
           <Card.Header>
@@ -53,6 +55,6 @@ export default function DeleteAccountPage() {
       </main>
       <AvailableCities />
       <Footer />
-    </div>
+    </>
   );
 }

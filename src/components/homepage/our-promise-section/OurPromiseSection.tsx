@@ -11,15 +11,15 @@ import appHomepage from "@/assets/images/app-homepage.png";
 
 export function OurPromiseSection() {
   return (
-    <section className="py-20 bg-surface">
+    <section className="py-20 bg-surface scroll-my-20">
       <div className="container">
         <div className="flex flex-col items-center justify-center text-center gap-y-8">
-          <div className="bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
+          <div className="text-sm md:text-base bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
             Our Promise and Purpose
           </div>
           <div className="space-y-2 max-w-xl">
-            <h1 className="font-bold text-4xl">Why Choose Us</h1>
-            <p className="font-medium text-lg text-pretty text-foreground/85">
+            <h1 className="text-2xl md:text-4xl font-bold">Why Choose Us</h1>
+            <p className="font-medium text-base md:text-lg text-pretty text-foreground/85">
               Experience the future of grocery shopping with our innovative
               features
             </p>
@@ -32,8 +32,10 @@ export function OurPromiseSection() {
               <div className="flex items-center justify-center size-14 rounded-3xl bg-accent/10 text-accent">
                 <TruckElectricIcon className="size-8" />
               </div>
-              <h1 className="font-bold text-lg">Lightning Fast Delivery</h1>
-              <p className="text-foreground/85">
+              <h1 className="font-bold text-base md:text-lg">
+                Lightning Fast Delivery
+              </h1>
+              <p className="text-foreground/85 text-sm md:text-base">
                 Get your groceries delivered in just 15-20 minutes with our
                 quick commerce model
               </p>
@@ -43,8 +45,8 @@ export function OurPromiseSection() {
               <div className="flex items-center justify-center size-14 rounded-3xl bg-accent/10 text-accent">
                 <CirclePercentIcon className="size-8" />
               </div>
-              <h1 className="font-bold text-lg">Best Prices</h1>
-              <p className="text-foreground/85">
+              <h1 className="font-bold text-base md:text-lg">Best Prices</h1>
+              <p className="text-foreground/85 text-sm md:text-base">
                 Competitive pricing on all products with exciting deals and
                 offers daily
               </p>
@@ -73,8 +75,10 @@ export function OurPromiseSection() {
               <div className="flex items-center justify-center size-14 rounded-3xl bg-accent/10 text-accent">
                 <SmartphoneIcon className="size-8" />
               </div>
-              <h1 className="font-bold text-lg">Easy Mobile App</h1>
-              <p className="text-foreground/85">
+              <h1 className="font-bold text-base md:text-lg">
+                Easy Mobile App
+              </h1>
+              <p className="text-foreground/85 text-sm md:text-base">
                 User-friendly app to browse, order, and track your deliveries in
                 real-time
               </p>
@@ -84,8 +88,10 @@ export function OurPromiseSection() {
               <div className="flex items-center justify-center size-14 rounded-3xl bg-accent/10 text-accent">
                 <StoreIcon className="size-8" />
               </div>
-              <h1 className="font-bold text-lg">Dark Store Model</h1>
-              <p className="text-foreground/85">
+              <h1 className="font-bold text-base md:text-lg">
+                Dark Store Model
+              </h1>
+              <p className="text-foreground/85 text-sm md:text-base">
                 Strategically located micro-warehouses ensure fastest delivery
                 times
               </p>

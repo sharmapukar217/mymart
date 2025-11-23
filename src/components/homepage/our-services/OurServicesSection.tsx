@@ -1,4 +1,4 @@
-import heartVegetables from "@/assets/images/heart-vegetables.png";
+import image from "@/assets/images/shop-online-old.gif";
 import { Card } from "@heroui/react";
 import {
   CheckCircleIcon,
@@ -10,15 +10,17 @@ import Image from "next/image";
 
 export function OurServicesSection() {
   return (
-    <section className="py-20 bg-surface-secondary">
+    <section id="services" className="py-20 scroll-my-20 bg-surface-secondary">
       <div className="container space-y-12">
         <div className="flex flex-col items-center justify-center text-center gap-y-8">
-          <div className="bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
+          <div className="text-sm md:text-base bg-accent/15 w-fit px-3 py-1.5 rounded-3xl text-accent font-semibold">
             Our Services
           </div>
           <div className="space-y-2 max-w-xl">
-            <h1 className="font-bold text-4xl">Order in Just a Minute! </h1>
-            <p className="font-medium text-lg text-pretty text-foreground/85">
+            <h1 className="font-bold text-2xl md:text-4xl">
+              Order in Just a Minute!{" "}
+            </h1>
+            <p className="font-medium text-base md:text-lg text-pretty text-foreground/85">
               Four simple steps to get your groceries delivered to your
               doorstep.
             </p>
@@ -28,10 +30,11 @@ export function OurServicesSection() {
         <div className="flex flex-col gap-12 lg:flex-row">
           <div className="shrink-0 mx-auto">
             <Image
-              alt="heart of vegetables"
-              src={heartVegetables.src}
               width="424"
               height="424"
+              src={image.src}
+              alt="heart of vegetables"
+              className="rounded-3xl"
             />
           </div>
           <div className="grid gap-2 w-full">
@@ -46,8 +49,10 @@ export function OurServicesSection() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg">Browse Products</h3>
-                <p className="text-foreground/85 text-base">
+                <h3 className="font-semibold text-base md:text-lg">
+                  Browse Products
+                </h3>
+                <p className="text-foreground/85 text-sm md:text-base">
                   Explore thousands of products across categories
                 </p>
               </div>
@@ -63,8 +68,10 @@ export function OurServicesSection() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg">Add to Cart</h3>
-                <p className="text-foreground/85 text-base">
+                <h3 className="font-semibold text-base md:text-lg">
+                  Add to Cart
+                </h3>
+                <p className="text-foreground/85 text-sm md:text-base">
                   Select items and add them to your cart
                 </p>
               </div>
@@ -80,8 +87,10 @@ export function OurServicesSection() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg">Confirm Order</h3>
-                <p className="text-foreground/85 text-base">
+                <h3 className="font-semibold text-base md:text-lg">
+                  Confirm Order
+                </h3>
+                <p className="text-foreground/85 text-sm md:text-base">
                   Review and place your order securely
                 </p>
               </div>
@@ -97,8 +106,10 @@ export function OurServicesSection() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg">Fast Delivery</h3>
-                <p className="text-foreground/85 text-base">
+                <h3 className="font-semibold text-base md:text-lg">
+                  Fast Delivery
+                </h3>
+                <p className="text-foreground/85 text-sm md:text-base">
                   Get Delivery in just 15-20 minutes
                 </p>
               </div>

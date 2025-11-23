@@ -1,9 +1,11 @@
 import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
+import { Header } from "@/components/layouts/Header";
 import { Footer } from "@/components/layouts/Footer";
 
 export default function TermsAndConditionsPage() {
   return (
-    <div>
+    <>
+      <Header />
       <main className="py-20 bg-gradient-to-br from-surface-secondary to-accent/5">
         <article className="container prose lg:prose-lg">
           <header>
@@ -227,6 +229,6 @@ export default function TermsAndConditionsPage() {
       </main>
       <AvailableCities />
       <Footer />
-    </div>
+    </>
   );
 }

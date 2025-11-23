@@ -3,6 +3,7 @@ import "@/assets/styles/global.css";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import { siteConfig } from "@/lib/siteConfig";
+import { AnimationProvider } from "@/components/common/AnimationProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         </style>
       </head>
       <body className={`${dmSans.className}`}>
+        <AnimationProvider />
         <div>{children}</div>
       </body>
     </html>

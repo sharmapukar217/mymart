@@ -45,7 +45,7 @@ export const MarqueeFade = ({
 export type MarqueeItemProps = HTMLAttributes<HTMLDivElement>;
 export const MarqueeItem = ({ className, ...props }: MarqueeItemProps) => (
   <div
-    className={twMerge("mx-2 flex-shrink-0 object-contain", className)}
+    className={twMerge("mx-1 flex-shrink-0 object-contain", className)}
     {...props}
   />
 );
