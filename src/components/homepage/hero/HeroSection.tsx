@@ -36,8 +36,8 @@ export function HeroSection() {
                 </span>
               </Card.Title>
               <Card.Description className="text-lg text-pretty">
-                Sastodeal is available on the App Store. Get started with
-                Sastodeal in Seconds!
+                My Mart is available on the App Store. Get started with My Mart
+                in Seconds!
               </Card.Description>
             </Card.Header>
 

@@ -30,10 +30,10 @@ export default function ContactUsPage() {
             </p>
 
             <Link
-              href="mailto:sastodeal@gmail.com"
+              href="mailto:mymart@gmail.com"
               className="inline-flex items-center gap-4 hover:underline hover:text-accent duration-500">
               <MailIcon className="size-5 text-accent" />
-              sastodeal@gmail.com
+              mymart@gmail.com
             </Link>
           </div>
 
