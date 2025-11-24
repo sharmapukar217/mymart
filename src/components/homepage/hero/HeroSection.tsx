@@ -4,6 +4,7 @@ import { SmartphoneIcon } from "lucide-react";
 import QRCode from "react-qr-code";
 
 import heroImage from "@/assets/images/hero.png";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -46,10 +47,13 @@ export function HeroSection() {
                 </Card.Description>
 
                 <Button
+                  asChild
                   variant="secondary"
                   className="w-full ring-1 bg-accent/5 hover:bg-accent hover:text-accent-foreground transition-colors duration-500">
-                  Download App
-                  <SmartphoneIcon />
+                  <Link href="/d">
+                    Download App
+                    <SmartphoneIcon />
+                  </Link>
                 </Button>
               </div>
 
@@ -64,22 +68,21 @@ export function HeroSection() {
                     strokeWidth="2"
                   />
                 </svg>
-                <QRCode
-                  value="https://drive.google.com/file/d/1fYuhuz_gdNAYHHM-NHGGOj3DR4TXOA2j/view?usp=sharing"
-                  className="rounded-2xl text-accent size-full"
-                />
+                <QRCode value="https://mymart.com.np/d" className="rounded-2xl text-accent size-full" />
               </div>
             </div>
           </Card>
         </div>
 
-        <div className="lg:absolute -right-[40%] bottom-0">
-          <Image
-            alt=""
-            src={heroImage.src}
-            width={heroImage.width}
-            height={heroImage.height}
-          />
+        <div className="relative">
+          <div className="lg:absolute lg:-right-[40%] xl:-right-[20%] bottom-0">
+            <Image
+              alt=""
+              src={heroImage.src}
+              width={heroImage.width}
+              height={heroImage.height}
+            />
+          </div>
         </div>
       </div>
     </section>

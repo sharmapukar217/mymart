@@ -81,9 +81,11 @@ export function Header() {
           ))}
         </nav>
         <div className="inline-flex items-center gap-4">
-          <Button className="group">
-            Download Now
-            <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
+          <Button asChild className="group hidden lg:flex">
+            <Link href="/d">
+              Download Now
+              <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
+            </Link>
           </Button>
 
           <Button
@@ -124,6 +126,13 @@ export function Header() {
             </Link>
           ))}
         </nav>
+
+        <Button asChild size="sm" className="group mt-2 w-full">
+          <Link href="/d">
+            Download Now
+            <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
+          </Link>
+        </Button>
       </div>
     </header>
   );

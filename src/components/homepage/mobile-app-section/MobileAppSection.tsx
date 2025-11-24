@@ -1,5 +1,7 @@
 import appHomepage from "@/assets/images/app-homepage.png";
+import { siteConfig } from "@/lib/siteConfig";
 import Image from "next/image";
+import Link from "next/link";
 
 export function MobileAppSection() {
   return (
@@ -27,8 +29,9 @@ export function MobileAppSection() {
           </div>
 
           <div className="flex flex-col justify-center sm:flex-row lg:justify-start gap-4 mt-8">
-            <button
-              type="button"
+            <Link
+              target="_blank"
+              href={siteConfig.appDownloadLinks.ios}
               className="p-2.5 w-full md:w-fit cursor-pointer flex items-center justify-center rounded-2xl text-xl bg-foreground text-background hover:bg-foreground/85">
               <svg
                 className="size-8 me-3 fill-background"
@@ -40,9 +43,10 @@ export function MobileAppSection() {
                 <p className="text-xs font-medium">Download on the</p>
                 <p className="text-xs font-semibold">App Store</p>
               </div>
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              target="_blank"
+              href={siteConfig.appDownloadLinks.android}
               className="py-2.5 px-8 w-full md:w-fit cursor-pointer flex items-center justify-center rounded-2xl text-xl bg-foreground text-background hover:bg-foreground/85">
               <svg
                 viewBox="30 336.7 120.9 129.2"
@@ -65,7 +69,7 @@ export function MobileAppSection() {
                 <p className="text-xs font-medium">GET IT ON</p>
                 <p className="text-xs font-semibold">Google Play</p>
               </div>
-            </button>
+            </Link>
           </div>
         </div>
 

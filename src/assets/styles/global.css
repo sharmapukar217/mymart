@@ -29,6 +29,6 @@ body {
 
 @layer utilities {
   .container {
-    @apply w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8;
+    @apply w-full max-w-[86rem] mx-auto px-4 md:px-6 lg:px-8;
   }
 }
