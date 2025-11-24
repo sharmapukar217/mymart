@@ -65,7 +65,7 @@ export function HeroSection() {
                   />
                 </svg>
                 <QRCode
-                  value=""
+                  value="https://drive.google.com/file/d/1fYuhuz_gdNAYHHM-NHGGOj3DR4TXOA2j/view?usp=sharing"
                   className="rounded-2xl text-accent size-full"
                 />
               </div>
