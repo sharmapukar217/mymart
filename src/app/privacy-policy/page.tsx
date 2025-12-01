@@ -28,8 +28,7 @@ export default function PrivacyPolicyPage() {
             store, and protect your personal information when you use our
             website, mobile app, or any related services (collectively referred
             to as the “Platform”). By accessing or using My Mart, you agree to
-            this Privacy Policy. If you do not agree, please do not use our
-            Platform.
+            this Privacy Policy.
           </p>
 
           <h2>2. Information We Collect</h2>
