@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export function Footer() {
   return (
-    <footer className="pt-10 md:pb-10 bg-surface-secondary">
+    <footer className="pt-10 bg-surface-secondary">
       <div className="container gap-y-8 flex flex-col md:flex-row md:items-center justify-between">
         <div className="grid gap-4">
           <LogoFull />
@@ -75,30 +75,30 @@ export function Footer() {
               </Link>
             </li>
           </ul>
+        </div>
+      </div>
 
-          <div className="mt-4 py-2 text-sm flex flex-wrap justify-center border-t border-foreground/10 items-center gap-y-1 gap-x-2">
-            <ul className="inline-flex items-center gap-2">
-              <li>
-                <Link
-                  href="/terms-of-services"
-                  className="text-foreground/85 font-medium hover:text-accent duration-500">
-                  Terms of services
-                </Link>
-              </li>
-              <span>•</span>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-foreground/85 font-medium hover:text-accent duration-500">
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-            <div className="col-span-2 w-fit">
-              &copy; Copyright {new Date().getFullYear()} {siteConfig.title} •
-              All Rights Reserved
-            </div>
-          </div>
+      <div className="mt-4 py-2 text-sm flex flex-wrap justify-center border-t border-foreground/10 items-center gap-y-1 gap-x-2">
+        <ul className="inline-flex items-center gap-2">
+          <li>
+            <Link
+              href="/terms-of-services"
+              className="text-foreground/85 font-medium hover:text-accent duration-500">
+              Terms of services
+            </Link>
+          </li>
+          <span>•</span>
+          <li>
+            <Link
+              href="/privacy-policy"
+              className="text-foreground/85 font-medium hover:text-accent duration-500">
+              Privacy Policy
+            </Link>
+          </li>
+        </ul>
+        <div className="col-span-2 w-fit">
+          &copy; Copyright {new Date().getFullYear()} {siteConfig.title} • All
+          Rights Reserved
         </div>
       </div>
     </footer>
