@@ -9,6 +9,7 @@ export const siteConfig = {
 
   appDownloadLinks: {
     ios: "",
-    android: "https://play.google.com/store/apps/details?id=com.mymart.mymart&pli=1"
+    android:
+      "https://play.google.com/store/apps/details?id=com.mymart.mymart&pli=1"
   }
 } as const;

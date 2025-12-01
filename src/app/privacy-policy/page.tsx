@@ -23,12 +23,14 @@ export default function PrivacyPolicyPage() {
           <h2>1. Introduction</h2>
           <p>
             Welcome to <strong>My Mart: Delivered in Minutes</strong> - operated
-            by <strong>My Mart Industries Pvt. Ltd.</strong>, headquartered in{" "}
-            <strong>Panipokhari, Kathmandu, Nepal.</strong> This Privacy Policy
-            describes how we collect, use, store, and protect your personal
-            information when you use our website, mobile app, or any related
-            services (collectively referred to as the “Platform”). By accessing
-            or using My Mart, you agree to this Privacy Policy.
+            by <strong>My Mart Industries Pvt. Ltd.</strong>, headquartered
+            at&nbsp;
+            <strong>Panipokhari, Kathmandu-03, Nepal.</strong> This Privacy
+            Policy describes how we collect, use, store, and protect your
+            personal information when you use our website, mobile app, or any
+            related services (collectively referred to as the “Platform”). By
+            accessing or using My Mart, you agree to this Privacy Policy. If you
+            do not agree, please refrain from using our services.
           </p>
 
           <h2>2. Information We Collect</h2>
@@ -147,7 +149,7 @@ export default function PrivacyPolicyPage() {
 
           <h2>9. Children’s Privacy</h2>
           <p>
-            Our services are not intended for children under 13. We do not
+            Our services are not intended for children under 18. We do not
             knowingly collect personal information from minors.
           </p>
 
@@ -175,6 +177,9 @@ export default function PrivacyPolicyPage() {
               <a href="mailto:support@mymartindustries.com">
                 support@mymartindustries.com
               </a>
+              <br />
+              Customer Support:&nbsp;
+              <a href="tel:+9779802075708">+977 980-2075708</a>
             </p>
           </address>
         </article>

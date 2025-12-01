@@ -84,7 +84,7 @@ export function Footer() {
             <Link
               href="/terms-of-services"
               className="text-foreground/85 font-medium hover:text-accent duration-500">
-              Terms of services
+              Terms of Services
             </Link>
           </li>
           <span>•</span>

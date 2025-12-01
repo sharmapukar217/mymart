@@ -4,7 +4,8 @@ import { type NextRequest, userAgent } from "next/server";
 
 export async function GET(request: NextRequest) {
   const ua = userAgent({ headers: request.headers });
-  if (ua.os.name === "Android") return redirect(siteConfig.appDownloadLinks.android);
+  if (ua.os.name === "Android")
+    return redirect(siteConfig.appDownloadLinks.android);
   if (ua.os.name === "iOS") return redirect(siteConfig.appDownloadLinks.ios);
   return redirect(`${request.nextUrl.origin}?popup=install_app`);
 }

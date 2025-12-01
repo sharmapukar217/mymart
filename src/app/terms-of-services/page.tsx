@@ -16,31 +16,29 @@ export default function TermsAndConditionsPage() {
             <p>
               <strong>Operated by:</strong> My Mart Industries Pvt. Ltd.
               <br />
-              <strong>Brand Name:</strong> My Mart (Delivered in minutes)
+              <strong>Brand Name:</strong> My Mart: Delivered in Minutes
             </p>
           </header>
-
           <h2>1. Introduction</h2>
           <p>
-            Welcome to <strong>My Mart Delivered in minutes</strong> — operated
-            by My Mart Industries Pvt. Ltd., headquartered at Panipokhari,
-            Kathmandu-03, Nepal. These Terms of Use (“Terms”) govern your access
-            and use of our website, mobile application, and related services
-            (“Platform”). By accessing or using My Mart, you agree to comply
-            with these Terms. If you do not agree, please refrain from using our
-            services.
+            Welcome to <strong>My Mart: Delivered in Minutes</strong> - operated
+            by <strong>My Mart Industries Pvt. Ltd.</strong>, headquartered
+            at&nbsp;<strong>Panipokhari, Kathmandu-03, Nepal.</strong> These
+            Terms of Use (“Terms”) govern your access and use of our website,
+            mobile application, and related services (“Platform”). By accessing
+            or using My Mart, you agree to comply with these Terms. If you do
+            not agree, please refrain from using our services.
           </p>
-
           <h2>2. Services Offered</h2>
           <p>
             My Mart provides a quick commerce platform that allows users to
             order groceries and daily essentials for fast delivery. In the
             future, My Mart may expand to include other product categories such
             as electronics, stationery, clothing, and more. Currently, our
-            delivery services are available within the Kathmandu Valley, with
-            plans to expand across Nepal soon.
+            delivery services are available within the{" "}
+            <strong>Kathmandu, Bhaktapur &amp; Lalitpur</strong> with plans to
+            expand across Nepal soon.
           </p>
-
           <h2>3. Eligibility</h2>
           <p>To use our Platform, you must:</p>
           <ul>
@@ -50,7 +48,6 @@ export default function TermsAndConditionsPage() {
             </li>
             <li>Use the Platform only for lawful purposes.</li>
           </ul>
-
           <h2>4. User Account</h2>
           <p>
             You may need to create an account to place orders. You are
@@ -64,7 +61,6 @@ export default function TermsAndConditionsPage() {
             My Mart is not responsible for any unauthorized access resulting
             from your failure to secure your account.
           </p>
-
           <h2>5. Orders and Delivery</h2>
           <ul>
             <li>Orders can be placed via our website or mobile app.</li>
@@ -82,13 +78,12 @@ export default function TermsAndConditionsPage() {
               payment failure).
             </li>
           </ul>
-
           <h2>6. Payments</h2>
           <p>My Mart accepts multiple payment modes, including:</p>
           <ul>
             <li>Cash on Delivery (COD)</li>
             <li>
-              Online Payment (digital wallets, debit/credit cards, or other
+              Online Payment (Digital wallets, Debit/Credit cards, or other
               gateways)
             </li>
           </ul>
@@ -98,7 +93,6 @@ export default function TermsAndConditionsPage() {
             process them within a reasonable time according to our refund
             policy.
           </p>
-
           <h2>7. Pricing and Offers</h2>
           <ul>
             <li>
@@ -111,7 +105,6 @@ export default function TermsAndConditionsPage() {
               each campaign and may be withdrawn anytime.
             </li>
           </ul>
-
           <h2>8. Returns, Replacements, and Refunds</h2>
           <p>If you receive damaged, expired, or incorrect products:</p>
           <ul>
@@ -128,7 +121,8 @@ export default function TermsAndConditionsPage() {
               consumed.
             </li>
           </ul>
-
+          For Customer Support:&nbsp;
+          <a href="tel:+9779802075708">+977 980-2075708</a>
           <h2>9. User Conduct</h2>
           <p>Users agree not to:</p>
           <ul>
@@ -141,7 +135,6 @@ export default function TermsAndConditionsPage() {
             Violation of these conditions may result in suspension or
             termination of your account.
           </p>
-
           <h2>10. Intellectual Property</h2>
           <p>
             All content on the My Mart Platform — including text, logos,
@@ -149,15 +142,13 @@ export default function TermsAndConditionsPage() {
             Mart Industries Pvt. Ltd. You may not copy, modify, reproduce, or
             distribute any content without written permission from My Mart.
           </p>
-
           <h2>11. Third-Party Services</h2>
           <p>
-            Our Platform may integrate with third-party services (e.g., payment
-            gateways, delivery partners). My Mart is not responsible for their
+            Our Platform may integrate with third-party services (e.g., Payment
+            gateways, Delivery partners). My Mart is not responsible for their
             terms, performance, or privacy practices. Please review their
             policies separately.
           </p>
-
           <h2>12. Limitation of Liability</h2>
           <p>
             My Mart strives to provide a reliable, fast, and secure experience.
@@ -174,7 +165,6 @@ export default function TermsAndConditionsPage() {
             </li>
           </ul>
           <p>Your use of the Platform is at your own risk.</p>
-
           <h2>13. Indemnification</h2>
           <p>
             You agree to indemnify and hold harmless My Mart Industries Pvt.
@@ -182,7 +172,6 @@ export default function TermsAndConditionsPage() {
             claims, damages, or liabilities arising from your use of the
             Platform or violation of these Terms.
           </p>
-
           <h2>14. Termination</h2>
           <p>
             My Mart may suspend or terminate access to your account or Platform
@@ -193,7 +182,6 @@ export default function TermsAndConditionsPage() {
             <li>Engage in misuse, fraud, or abuse of services.</li>
             <li>Provide false information or engage in suspicious activity.</li>
           </ul>
-
           <h2>15. Modifications to the Terms</h2>
           <p>
             My Mart reserves the right to modify or update these Terms at any
@@ -201,31 +189,26 @@ export default function TermsAndConditionsPage() {
             new date. Your continued use of My Mart services after changes means
             you accept the revised Terms.
           </p>
-
-          <h2>16. Governing Law and JuriMy Martiction</h2>
+          <h2>16. Governing Law and Jurisdiction</h2>
           <p>
             These Terms are governed by the laws of Nepal. Any disputes arising
             under or in connection with these Terms shall be subject to the
-            exclusive juriMy Martiction of the courts in Kathmandu, Nepal.
+            exclusive jurisdiction of the courts in Kathmandu, Nepal.
           </p>
-
           <h2>17. Contact Us</h2>
-          <address>
+          <address className="not-italic">
             <p>
               My Mart Industries Pvt. Ltd.
               <br />
               Panipokhari, Kathmandu-03, Nepal
-              <br />📧 Email:&nbsp;
+              <br />
+              Email:&nbsp;
               <a href="mailto:support@mymartindustries.com">
                 support@mymartindustries.com
               </a>
-              <br />🌐 Website:&nbsp;
-              <a
-                href="https://www.mymart.com.np"
-                target="_blank"
-                rel="noopener noreferrer">
-                www.mymart.com.np
-              </a>
+              <br />
+              Customer Support:&nbsp;
+              <a href="tel:+9779802075708">+977 980-2075708</a>
             </p>
           </address>
         </article>

@@ -68,7 +68,10 @@ export function HeroSection() {
                     strokeWidth="2"
                   />
                 </svg>
-                <QRCode value="https://mymart.com.np/d" className="rounded-2xl text-accent size-full" />
+                <QRCode
+                  value="https://mymart.com.np/d"
+                  className="rounded-2xl text-accent size-full"
+                />
               </div>
             </div>
           </Card>
