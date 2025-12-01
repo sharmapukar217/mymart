@@ -16,37 +16,37 @@ export default function PrivacyPolicyPage() {
             <p>
               <strong>Operated by:</strong> My Mart Industries Pvt. Ltd.
               <br />
-              <strong>Brand Name:</strong> My Mart Delivered in minutes.
+              <strong>Brand Name:</strong> My Mart: Delivered in Minutes.
             </p>
           </header>
 
           <h2>1. Introduction</h2>
           <p>
-            Welcome to <strong>My Mart Delivered in minutes</strong> — operated
-            by My Mart Industries Pvt. Ltd., headquartered in Panipokhari,
-            Kathmandu, Nepal. This Privacy Policy describes how we collect, use,
-            store, and protect your personal information when you use our
-            website, mobile app, or any related services (collectively referred
-            to as the “Platform”). By accessing or using My Mart, you agree to
-            this Privacy Policy.
+            Welcome to <strong>My Mart: Delivered in Minutes</strong> - operated
+            by <strong>My Mart Industries Pvt. Ltd.</strong>, headquartered in{" "}
+            <strong>Panipokhari, Kathmandu, Nepal.</strong> This Privacy Policy
+            describes how we collect, use, store, and protect your personal
+            information when you use our website, mobile app, or any related
+            services (collectively referred to as the “Platform”). By accessing
+            or using My Mart, you agree to this Privacy Policy.
           </p>
 
           <h2>2. Information We Collect</h2>
 
           <h3>A. Personal Information</h3>
           <ul>
-            <li>Name, phone number, email address</li>
-            <li>Delivery address, billing address</li>
+            <li>Name, Phone number, Email address</li>
+            <li>Delivery address and Billing address</li>
             <li>Date and time of order</li>
             <li>
-              Payment details (online payment, wallet, or cash on delivery)
+              Payment details (Online payment, Wallet, or Cash on Delivery)
             </li>
           </ul>
 
           <h3>B. Device and Technical Information</h3>
           <ul>
-            <li>Device type, operating system, and app version</li>
-            <li>IP address, browser type, and usage logs</li>
+            <li>Device type, Operating system, and App version</li>
+            <li>IP address, Browser type, and Usage logs</li>
             <li>Cookies and analytics data</li>
           </ul>
 
@@ -100,7 +100,7 @@ export default function PrivacyPolicyPage() {
             </li>
           </ul>
           <p>
-            We do <strong>not</strong> sell or rent your personal information to
+            We <strong>do not</strong> sell or rent your personal information to
             any third parties.
           </p>
 
@@ -166,21 +166,14 @@ export default function PrivacyPolicyPage() {
           </p>
 
           <h2>12. Contact Us</h2>
-          <address>
+          <address className="not-italic">
             <p>
               My Mart Industries Pvt. Ltd.
               <br />
               Panipokhari, Kathmandu-03, Nepal
-              <br />📧 Email:&nbsp;
+              <br /> Email:&nbsp;
               <a href="mailto:support@mymartindustries.com">
                 support@mymartindustries.com
-              </a>
-              <br />🌐 Website:&nbsp;
-              <a
-                href="https://www.mymart.com.np"
-                target="_blank"
-                rel="noopener noreferrer">
-                www.mymart.com.np
               </a>
             </p>
           </address>
