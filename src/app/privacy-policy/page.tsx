@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
             <p>
               <strong>Operated by:</strong> My Mart Industries Pvt. Ltd.
               <br />
-              <strong>Brand Name:</strong> MyMart Delivered in minutes.
+              <strong>Brand Name:</strong> My Mart Delivered in minutes.
             </p>
           </header>
 
@@ -177,8 +177,11 @@ export default function PrivacyPolicyPage() {
                 support@mymartindustries.com
               </a>
               <br />🌐 Website:&nbsp;
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                www.mymart.com
+              <a
+                href="https://www.mymart.com.np"
+                target="_blank"
+                rel="noopener noreferrer">
+                www.mymart.com.np
               </a>
             </p>
           </address>

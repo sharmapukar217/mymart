@@ -220,8 +220,11 @@ export default function TermsAndConditionsPage() {
                 support@mymartindustries.com
               </a>
               <br />🌐 Website:&nbsp;
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                www.mymart.com
+              <a
+                href="https://www.mymart.com.np"
+                target="_blank"
+                rel="noopener noreferrer">
+                www.mymart.com.np
               </a>
             </p>
           </address>

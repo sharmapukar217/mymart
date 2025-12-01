@@ -9,10 +9,10 @@ import { ArrowRightIcon } from "lucide-react";
 import LogoFull from "@/assets/icons/logo-full.svg";
 
 const NAV_LINKS = [
-  { title: "About Us", href: "/#about-us" },
+  { title: "Categories", href: "/#categories" },
   { title: "Services", href: "/#services" },
   { title: "Features", href: "/#features" },
-  { title: "Categories", href: "/#categories" },
+  { title: "About Us", href: "/#about-us" },
   { title: "FAQs", href: "/#faqs" },
   { title: "Contact Us", href: "/contact-us/#contact-us" }
 ];
@@ -39,13 +39,11 @@ export function Header() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
+          setActiveSection(entry.isIntersecting ? entry.target.id : null);
         });
       },
       {
-        threshold: 0
+        threshold: 0.2
         // rootMargin: "-10% 0px -90% 0px"
       }
     );
