@@ -8,7 +8,7 @@ export const siteConfig = {
   },
 
   appDownloadLinks: {
-    ios: "",
+    ios: "https://apps.apple.com/np/app/my-mart-delivered-in-minutes/id6755923893",
     android:
       "https://play.google.com/store/apps/details?id=com.mymart.mymart&pli=1"
   }
