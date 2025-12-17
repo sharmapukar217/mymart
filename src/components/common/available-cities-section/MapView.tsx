@@ -1,13 +1,17 @@
+import { useIsNativeWebView } from "@/components/NativeWebViewProvider";
 import * as React from "react";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 
 export function MapView() {
+  const isNativeWebView = useIsNativeWebView();
   const mapRef = React.useRef<import("leaflet").Map>(null);
   const [currentPos, setCurrentPos] = React.useState<[number, number] | null>(
     null
   );
 
   React.useEffect(() => {
+    if (isNativeWebView) return;
+
     navigator.geolocation.watchPosition(
       ({ coords }) => {
         const latLng: [number, number] = [coords.latitude, coords.longitude];
@@ -18,7 +22,7 @@ export function MapView() {
       null,
       { enableHighAccuracy: true }
     );
-  }, []);
+  }, [isNativeWebView]);
 
   return (
     <div className="relative mx-auto border-gray-800 bg-base border-[8px] rounded-[2.5rem] h-[520px] w-[242px]">

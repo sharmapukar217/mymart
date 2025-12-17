@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 import LogoFull from "@/assets/icons/logo-full.svg";
+import { useIsNativeWebView } from "../NativeWebViewProvider";
 
 const NAV_LINKS = [
   { title: "Categories", href: "/#categories" },
@@ -18,6 +19,7 @@ const NAV_LINKS = [
 ];
 
 export function Header() {
+  const isNativeWebView = useIsNativeWebView();
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
@@ -66,13 +68,14 @@ export function Header() {
           ))}
         </nav>
         <div className="inline-flex items-center gap-4">
-          <Button asChild className="group hidden lg:flex">
-            <Link href="/d" onClick={() => setIsOpen(false)}>
-              Download Now
-              <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
-            </Link>
-          </Button>
-
+          {!isNativeWebView && (
+            <Button asChild className="group hidden lg:flex">
+              <Link href="/d" onClick={() => setIsOpen(false)}>
+                Download Now
+                <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
+              </Link>
+            </Button>
+          )}
           <Button
             className="lg:hidden"
             variant="ghost"
@@ -112,12 +115,14 @@ export function Header() {
           ))}
         </nav>
 
-        <Button asChild size="sm" className="group mt-2 w-full">
-          <Link href="/d" onClick={() => setIsOpen(false)}>
-            Download Now
-            <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
-          </Link>
-        </Button>
+        {!isNativeWebView && (
+          <Button asChild size="sm" className="group mt-2 w-full">
+            <Link href="/d" onClick={() => setIsOpen(false)}>
+              Download Now
+              <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
+            </Link>
+          </Button>
+        )}
       </div>
     </header>
   );

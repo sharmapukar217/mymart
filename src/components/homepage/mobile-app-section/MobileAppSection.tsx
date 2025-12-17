@@ -1,9 +1,14 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import appHomepage from "@/assets/images/app-homepage.png";
 import { siteConfig } from "@/lib/siteConfig";
+import { useIsNativeWebView } from "@/components/NativeWebViewProvider";
 
 export function MobileAppSection() {
+  const isNativeWebView = useIsNativeWebView();
+  if (isNativeWebView) return null;
+
   return (
     <section className="py-20 bg-surface">
       <div className="container grid gap-16 lg:grid-cols-2">

@@ -2,10 +2,12 @@ import "@/assets/styles/global.css";
 
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { AnimationProvider } from "@/components/common/AnimationProvider";
 import { InstallAppPopup } from "@/components/popups/InstallAppPopup";
 import { siteConfig } from "@/lib/siteConfig";
+import { userAgent } from "next/server";
+import { NativeWebViewProvider } from "@/components/NativeWebViewProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +23,20 @@ export default async function RootLayout({
   children
 }: React.PropsWithChildren) {
   const cookieStore = await cookies();
-  const popupState = cookieStore.get("INSTALL_APP_POPUP_STATE")?.value;
+  const popupState = cookieStore.get("InstallAppPopup_APP_POPUP_STATE")?.value;
+
+  const headersList = await headers();
+  const { ua } = userAgent({ headers: headersList });
+
+  const uaLowerCased = ua?.toLowerCase() || "";
+
+  const isAndroidWebView = uaLowerCased.includes("wv");
+  const isIosWebView =
+    /iphone|ipad|ipod/.test(uaLowerCased) && !uaLowerCased.includes("safari");
+  const isNativeWebView = isAndroidWebView || isIosWebView;
+
+  console.log(Object.fromEntries(headersList));
+  console.log(ua);
 
   return (
     <html lang="en">
@@ -33,9 +48,13 @@ export default async function RootLayout({
         </style>
       </head>
       <body className={`${dmSans.className}`}>
-        <InstallAppPopup defaultOpen={popupState !== "hidden"} />
-        <AnimationProvider />
-        <div>{children}</div>
+        <NativeWebViewProvider isNativeWebView={isNativeWebView}>
+          {!isNativeWebView && (
+            <InstallAppPopup defaultOpen={popupState !== "hidden"} />
+          )}
+          <AnimationProvider />
+          <div>{children}</div>
+        </NativeWebViewProvider>
       </body>
     </html>
   );
