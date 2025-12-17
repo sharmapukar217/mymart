@@ -1,10 +1,10 @@
-import LogoFull from "@/assets/icons/logo-full.svg";
 import {
   SiFacebook,
   SiInstagram,
   SiYoutube
 } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
+import LogoFull from "@/assets/icons/logo-full.svg";
 import { siteConfig } from "@/lib/siteConfig";
 
 export function Footer() {

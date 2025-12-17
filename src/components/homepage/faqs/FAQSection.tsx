@@ -1,7 +1,7 @@
-import faqsImage from "@/assets/images/faqs.png";
 import { Accordion } from "@heroui/react";
 import { PlusIcon } from "lucide-react";
 import Image from "next/image";
+import faqsImage from "@/assets/images/faqs.png";
 
 const faqs = [
   {

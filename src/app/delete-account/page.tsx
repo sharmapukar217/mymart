@@ -1,8 +1,8 @@
 import { Button, Card, Checkbox, Input, Label } from "@heroui/react";
 import { TriangleAlertIcon } from "lucide-react";
 import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
-import { Header } from "@/components/layouts/Header";
 import { Footer } from "@/components/layouts/Footer";
+import { Header } from "@/components/layouts/Header";
 
 export default function DeleteAccountPage() {
   return (

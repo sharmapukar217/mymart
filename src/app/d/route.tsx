@@ -1,6 +1,6 @@
-import { siteConfig } from "@/lib/siteConfig";
 import { redirect } from "next/navigation";
 import { type NextRequest, userAgent } from "next/server";
+import { siteConfig } from "@/lib/siteConfig";
 
 export async function GET(request: NextRequest) {
   const ua = userAgent({ headers: request.headers });

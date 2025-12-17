@@ -1,4 +1,3 @@
-import becomeASeller from "@/assets/images/become-a-seller.gif";
 import { Button } from "@heroui/react";
 import {
   ClockArrowUpIcon,
@@ -7,6 +6,7 @@ import {
   UserPlusIcon
 } from "lucide-react";
 import Image from "next/image";
+import becomeASeller from "@/assets/images/become-a-seller.gif";
 import { BrandsSection } from "@/components/homepage/brands-section/BrandsSection";
 
 export function PartnerWithUsSection() {

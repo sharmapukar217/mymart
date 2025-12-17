@@ -8,8 +8,8 @@ import { MobileAppSection } from "@/components/homepage/mobile-app-section/Mobil
 import { OurPromiseSection } from "@/components/homepage/our-promise-section/OurPromiseSection";
 import { OurServicesSection } from "@/components/homepage/our-services/OurServicesSection";
 import { PartnerWithUsSection } from "@/components/homepage/partner-with-us-section/PartnerWithUsSection";
-import { Header } from "@/components/layouts/Header";
 import { Footer } from "@/components/layouts/Footer";
+import { Header } from "@/components/layouts/Header";
 
 export default function Home() {
   return (

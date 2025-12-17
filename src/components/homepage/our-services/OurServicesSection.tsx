@@ -1,4 +1,3 @@
-import image from "@/assets/images/shop-online-old.gif";
 import { Card } from "@heroui/react";
 import {
   CheckCircleIcon,
@@ -7,6 +6,7 @@ import {
   TruckElectricIcon
 } from "lucide-react";
 import Image from "next/image";
+import image from "@/assets/images/shop-online-old.gif";
 
 export function OurServicesSection() {
   return (

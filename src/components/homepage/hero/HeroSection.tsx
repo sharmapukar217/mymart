@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { Button, Card } from "@heroui/react";
 import { SmartphoneIcon } from "lucide-react";
-import QRCode from "react-qr-code";
-
-import heroImage from "@/assets/images/hero.png";
+import Image from "next/image";
 import Link from "next/link";
+import QRCode from "react-qr-code";
+import heroImage from "@/assets/images/hero.png";
 
 export function HeroSection() {
   return (

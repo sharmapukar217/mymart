@@ -1,5 +1,5 @@
-import appHomepage from "@/assets/images/app-homepage.png";
 import Image from "next/image";
+import appHomepage from "@/assets/images/app-homepage.png";
 
 export function KeyFeaturesSection() {
   return (

@@ -1,7 +1,7 @@
-import appHomepage from "@/assets/images/app-homepage.png";
-import { siteConfig } from "@/lib/siteConfig";
 import Image from "next/image";
 import Link from "next/link";
+import appHomepage from "@/assets/images/app-homepage.png";
+import { siteConfig } from "@/lib/siteConfig";
 
 export function MobileAppSection() {
   return (

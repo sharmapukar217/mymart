@@ -3,7 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import AOS from "aos";
 import gsap from "gsap";
-import { ReactLenis, type LenisRef } from "lenis/react";
+import { type LenisRef, ReactLenis } from "lenis/react";
 import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(useGSAP);

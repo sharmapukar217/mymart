@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { VerifyEmailDocument } from "@/generated/graphql";
 import { fetcher } from "@/lib/fetcher";
-import Link from "next/link";
 
 interface PageProps {
   searchParams: Promise<{ token: string }>;

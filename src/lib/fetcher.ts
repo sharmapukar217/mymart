@@ -1,8 +1,8 @@
 "use server";
 
-import { env } from "@/env";
 import { print } from "graphql";
 import { cookies } from "next/headers";
+import { env } from "@/env";
 import { AUTH_TOKEN_SESSION_KEY } from "./constants";
 
 type GraphqlResponse<Response> = {

@@ -1,12 +1,12 @@
 import Image from "next/image";
-import annamLogo from "@/assets/images/annam-logo.png";
-import daburLogo from "@/assets/images/dabur-logo.png";
-import waiwaiLogo from "@/assets/images/waiwai-logo.png";
-import unileverLogo from "@/assets/images/unilever-logo.png";
-import britiniaLogo from "@/assets/images/britinia-logo.png";
-import hilifeLogo from "@/assets/images/hilife-logo.png";
-import currentLogo from "@/assets/images/current-logo.png";
 import americanGourmentLogo from "@/assets/images/american-gourment-logo.png";
+import annamLogo from "@/assets/images/annam-logo.png";
+import britiniaLogo from "@/assets/images/britinia-logo.png";
+import currentLogo from "@/assets/images/current-logo.png";
+import daburLogo from "@/assets/images/dabur-logo.png";
+import hilifeLogo from "@/assets/images/hilife-logo.png";
+import unileverLogo from "@/assets/images/unilever-logo.png";
+import waiwaiLogo from "@/assets/images/waiwai-logo.png";
 
 import {
   Marquee,

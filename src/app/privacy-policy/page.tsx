@@ -1,6 +1,6 @@
 import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
-import { Header } from "@/components/layouts/Header";
 import { Footer } from "@/components/layouts/Footer";
+import { Header } from "@/components/layouts/Header";
 
 export default function PrivacyPolicyPage() {
   return (

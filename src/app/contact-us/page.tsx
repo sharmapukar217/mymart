@@ -1,10 +1,10 @@
-import contactUsImage from "@/assets/images/contact-us.png";
-import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
-import { Header } from "@/components/layouts/Header";
-import { Footer } from "@/components/layouts/Footer";
 import { MailIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import contactUsImage from "@/assets/images/contact-us.png";
+import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
+import { Footer } from "@/components/layouts/Footer";
+import { Header } from "@/components/layouts/Header";
 import { ContactUsForm } from "./ContactUsForm";
 
 export default function ContactUsPage() {

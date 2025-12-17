@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { Button } from "@heroui/react";
-import { twMerge } from "tailwind-merge";
-import { useEffect, useState } from "react";
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 import LogoFull from "@/assets/icons/logo-full.svg";
 
@@ -19,20 +19,7 @@ const NAV_LINKS = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  // const [isScrolling, setIsScrolling] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolling(window.scrollY > 100);
-  //   };
-
-  //   handleScroll();
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -80,7 +67,7 @@ export function Header() {
         </nav>
         <div className="inline-flex items-center gap-4">
           <Button asChild className="group hidden lg:flex">
-            <Link href="/d">
+            <Link href="/d" onClick={() => setIsOpen(false)}>
               Download Now
               <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
             </Link>
@@ -126,7 +113,7 @@ export function Header() {
         </nav>
 
         <Button asChild size="sm" className="group mt-2 w-full">
-          <Link href="/d">
+          <Link href="/d" onClick={() => setIsOpen(false)}>
             Download Now
             <ArrowRightIcon className="group-hover:translate-x-1 duration-500" />
           </Link>
