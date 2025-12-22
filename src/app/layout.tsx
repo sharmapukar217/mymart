@@ -23,7 +23,7 @@ export default async function RootLayout({
   children
 }: React.PropsWithChildren) {
   const cookieStore = await cookies();
-  const popupState = cookieStore.get("InstallAppPopup_APP_POPUP_STATE")?.value;
+  const popupState = cookieStore.get("INSTALL_APP_POPUP_STATE")?.value;
 
   const headersList = await headers();
   const { ua } = userAgent({ headers: headersList });
