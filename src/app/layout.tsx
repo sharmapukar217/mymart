@@ -35,9 +35,6 @@ export default async function RootLayout({
     /iphone|ipad|ipod/.test(uaLowerCased) && !uaLowerCased.includes("safari");
   const isNativeWebView = isAndroidWebView || isIosWebView;
 
-  console.log(Object.fromEntries(headersList));
-  console.log(ua);
-
   return (
     <html lang="en">
       <head>
