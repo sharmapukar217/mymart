@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TBP5Y24H6Y.com.mymart.mymart.ios",
+        "paths": [ "*" ]
+      },
+      {
+        "appID": "TBP5Y24H6Y.com.mymart.mymart.ios.dev",
+        "paths": [ "*" ]
+      }
+    ]
+  }
+}
