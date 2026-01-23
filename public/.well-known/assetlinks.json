@@ -1,11 +1,15 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.mymart.mymart",
       "sha256_cert_fingerprints": [
         "41:41:1C:BB:62:39:0C:65:6E:78:A3:FC:89:96:79:9C:8C:1A:DC:94:62:79:E3:D1:56:8A:E2:BD:04:CF:B0:D2",
+        "21:DD:04:1B:5A:42:D9:DC:AF:1C:3E:97:CB:A7:6E:29:15:0F:38:90:BB:12:64:20:51:3A:79:96:B7:18:6D:5E",
         "21:DD:04:1B:5A:42:D9:DC:AF:1C:3E:97:CB:A7:6E:29:15:0F:38:90:BB:12:64:20:51:3A:79:96:B7:18:6D:5E"
       ]
     }
@@ -16,6 +20,7 @@
       "namespace": "android_app",
       "package_name": "com.mymart.mymart.dev",
       "sha256_cert_fingerprints": [
+        "21:DD:04:1B:5A:42:D9:DC:AF:1C:3E:97:CB:A7:6E:29:15:0F:38:90:BB:12:64:20:51:3A:79:96:B7:18:6D:5E",
         "21:DD:04:1B:5A:42:D9:DC:AF:1C:3E:97:CB:A7:6E:29:15:0F:38:90:BB:12:64:20:51:3A:79:96:B7:18:6D:5E"
       ]
     }
