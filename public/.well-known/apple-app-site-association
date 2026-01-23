@@ -4,11 +4,11 @@
     "details": [
       {
         "appID": "TBP5Y24H6Y.com.mymart.mymart.ios",
-        "paths": [ "*" ]
+        "paths": [ "/promotions", "/promotions/*","*" ]
       },
       {
         "appID": "TBP5Y24H6Y.com.mymart.mymart.ios.dev",
-        "paths": [ "*" ]
+        "paths": [ "/promotions", "/promotions/*","*" ]
       }
     ]
   }
