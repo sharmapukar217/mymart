@@ -7,7 +7,8 @@ import {
   UserIcon,
   LinkedinIcon,
   ClockIcon,
-  Facebook
+  Facebook,
+  CheckCircleIcon
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -259,7 +260,7 @@ export default function ContactUsPage() {
                         Available 7 days a week
                       </p>
                       <div className="flex items-center gap-2 text-xs text-foreground/70">
-                        <ClockIcon className="size-3 text-accent" />
+                        <CheckCircleIcon className="size-3 text-accent" />
                         <span>Quick response guaranteed</span>
                       </div>
                     </div>
