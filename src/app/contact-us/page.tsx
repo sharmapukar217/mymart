@@ -90,7 +90,7 @@ export default function ContactUsPage() {
                 {/* Get in Touch */}
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-foreground">
-                    Get in Touch
+                    Customer Support
                   </h3>
 
                   <div className="space-y-3">
@@ -111,7 +111,7 @@ export default function ContactUsPage() {
                           </Link>
                         </p>
                         <p className="text-foreground/70 mt-1">
-                          (Sun to Fri, 7AM to 10PM)
+                          (Sun to Sat, 7AM to 10PM)
                         </p>
                       </div>
                     </div>
@@ -245,22 +245,23 @@ export default function ContactUsPage() {
                       Office Hours
                     </h3>
                   </div>
-                  <div className="space-y-3 text-sm flex-1">
+                  <div className="space-y-4 text-sm flex-1">
                     <div className="flex items-center gap-2">
                       <span className="text-foreground/75 flex-1">
-                        Sunday - Friday
+                        Sunday - Saturday
                       </span>
                       <span className="font-medium text-foreground">
                         7AM - 10PM
                       </span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-foreground/75 flex-1">
-                        Saturday
-                      </span>
-                      <span className="font-medium text-foreground">
-                        Closed
-                      </span>
+                    <div className="pt-2 border-t border-foreground/10">
+                      <p className="text-xs text-foreground/60 mb-2">
+                        Available 7 days a week
+                      </p>
+                      <div className="flex items-center gap-2 text-xs text-foreground/70">
+                        <ClockIcon className="size-3 text-accent" />
+                        <span>Quick response guaranteed</span>
+                      </div>
                     </div>
                   </div>
                   <div className="mt-4 pt-4 border-t border-foreground/10">
