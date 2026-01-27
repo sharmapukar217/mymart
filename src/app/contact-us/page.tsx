@@ -6,11 +6,17 @@ import {
   FileTextIcon,
   UserIcon,
   LinkedinIcon,
-  ClockIcon
+  ClockIcon,
+  Facebook
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
+import {
+  SiFacebook,
+  SiInstagram,
+  SiWhatsapp,
+  SiViber
+} from "@icons-pack/react-simple-icons";
 import { AvailableCities } from "@/components/common/available-cities-section/AvailableCitiesSection";
 import { Footer } from "@/components/layouts/Footer";
 import { Header } from "@/components/layouts/Header";
@@ -131,7 +137,7 @@ export default function ContactUsPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:scale-110 duration-500 text-accent hover:text-accent/90">
-                        <SiFacebook className="size-6" />
+                        <Facebook className="size-6" />
                       </Link>
                       <Link
                         href="https://www.instagram.com/mymartnp/"
@@ -146,6 +152,20 @@ export default function ContactUsPage() {
                         rel="noopener noreferrer"
                         className="hover:scale-110 duration-500 text-accent hover:text-accent/90">
                         <LinkedinIcon className="size-6" />
+                      </Link>
+                      <Link
+                        href="https://wa.me/9779802075708"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:scale-110 duration-500 text-accent hover:text-accent/90">
+                        <SiWhatsapp className="size-6" />
+                      </Link>
+                      <Link
+                        href="https://viber.com/9779802075708"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:scale-110 duration-500 text-accent hover:text-accent/90">
+                        <SiViber className="size-6" />
                       </Link>
                     </div>
                   </div>
