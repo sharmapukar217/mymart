@@ -6,6 +6,7 @@ import {
 import Link from "next/link";
 import LogoFull from "@/assets/icons/logo-full.svg";
 import { siteConfig } from "@/lib/siteConfig";
+import { LinkedinIcon } from "lucide-react";
 
 export function Footer() {
   return (
@@ -15,21 +16,21 @@ export function Footer() {
           <LogoFull />
           <div className="flex items-center gap-6">
             <Link
-              href="/"
+              href="https://www.facebook.com/mymartindustries"
               className="hover:scale-110 duration-500 text-accent hover:text-accent/90">
               <SiFacebook className="size-6" />
             </Link>
 
             <Link
-              href="/"
+              href="https://www.instagram.com/mymartnp/"
               className="hover:scale-110 duration-500 text-accent hover:text-accent/90">
               <SiInstagram className="size-6" />
             </Link>
 
             <Link
-              href="/"
+              href="https://www.linkedin.com/company/82611744/"
               className="hover:scale-110 duration-500 text-accent hover:text-accent/90">
-              <SiYoutube className="size-6" />
+              <LinkedinIcon className="size-6" />
             </Link>
           </div>
         </div>
